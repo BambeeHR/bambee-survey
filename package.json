@@ -1,0 +1,59 @@
+{
+  "name": "bambee-survey",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/bambee-survey.common.js",
+  "scripts": {
+    "dev": "npm run storybook",
+    "prebuild": "rimraf dist",
+    "build": "vue-cli-service build --target lib --name pollen src/main.js",
+    "lint": "vue-cli-service lint",
+    "lint:css": "stylelint './src/**/*.{vue, css}'",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "vue": "2.x"
+  },
+  "dependencies": {
+    "@bambee/pollen": "^0.32.0",
+    "core-js": "^3.6.5",
+    "survey-vue": "^1.8.11",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@storybook/addon-actions": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/addon-links": "^6.2.8",
+    "@storybook/vue": "^6.2.8",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
