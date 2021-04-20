@@ -1,0 +1,40 @@
+{
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+  },
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+    80
+  ],
+  "eslint.enable": true,
+  "eslint.run": "onType",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue"
+  ],
+  "files.autoSave": "off",
+  "stylelint.enable": true,
+  "peacock.color": "#b95237",
+  "peacock.remoteColor": "#b95237",
+  "vetur.validation.style": false,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#cd6f56",
+    "activityBar.activeBackground": "#cd6f56",
+    "activityBar.activeBorder": "#84db96",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#84db96",
+    "activityBarBadge.foreground": "#15202b",
+    "titleBar.activeBackground": "#b95237",
+    "titleBar.inactiveBackground": "#b9523799",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#b95237",
+    "statusBarItem.hoverBackground": "#cd6f56",
+    "statusBar.foreground": "#e7e7e7"
+  }
+}

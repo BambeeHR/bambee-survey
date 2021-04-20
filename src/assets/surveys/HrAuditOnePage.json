@@ -1,0 +1,255 @@
+{
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "boolean",
+          "name": "hasRemoteWorkers",
+          "title": "Do you have any remote workers?",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "remoteLocations",
+          "visible": false,
+          "visibleIf": "{hasRemoteWorkers} = true",
+          "title": "What cities and states do they live in?",
+          "hideNumber": true,
+          "requiredIf": "{hasRemoteWorkers} = true"
+        },
+        {
+          "type": "radiogroup",
+          "name": "hasPtoPolicy",
+          "title": "Does your company have a defined paid or unpaid time off policy?",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "yes",
+              "text": "Yes"
+            },
+            {
+              "value": "no",
+              "text": "No"
+            },
+            {
+              "value": "unsure",
+              "text": "I'm not sure"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "hasPosters",
+          "title": "Do you have up-to-date (current year) Federal, State and Local labor notices posted in your break or common rooms?",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "yes",
+              "text": "Yes"
+            },
+            {
+              "value": "no",
+              "text": "No"
+            },
+            {
+              "value": "unsure",
+              "text": "I'm not sure"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "payrollInterest",
+          "title": "If Bambee were to offer a payroll solution for no additional cost, how interested would you be in using it?",
+          "isRequired": true,
+          "choices": [
+            "Very interested",
+            "Somewhat interested",
+            "Not interested"
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "offers401k",
+          "title": "Do you offer your employees access to a 401k plan?",
+          "isRequired": true
+        },
+        {
+          "type": "boolean",
+          "name": "willOffer401k",
+          "visible": false,
+          "visibleIf": "{offers401k} = false",
+          "title": "Do you plan to offer your employees access to a 401k plan in the next year?",
+          "hideNumber": true,
+          "isRequired": true
+        },
+        {
+          "type": "boolean",
+          "name": "bambee401k",
+          "title": "If Bambee were to offer a competitive 401k for your employees, would you offer it?",
+          "isRequired": true
+        },
+        {
+          "type": "radiogroup",
+          "name": "mandated401k",
+          "title": "Some states are considering legislation to mandate small businesses offer a 401k plan for their employees. If your state mandated 401k, would you offer it or pay the penalty?",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "offer",
+              "text": "Offer it"
+            },
+            {
+              "value": "penalty",
+              "text": "Pay the penalty"
+            },
+            {
+              "value": "cheaper",
+              "text": "Whichever is cheaper"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "providesW4",
+          "title": "When hiring a new employee, do you provide the W-4 tax form during the onboarding process?",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "yes",
+              "text": "Yes"
+            },
+            {
+              "value": "no",
+              "text": "No"
+            },
+            {
+              "value": "unsure",
+              "text": "I'm not sure"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "providesStateWitholdForms",
+          "title": "When hiring a new employee, do you provide any state specific tax withholding forms during the onboarding process?",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "yes",
+              "text": "Yes"
+            },
+            {
+              "value": "no",
+              "text": "No"
+            },
+            {
+              "value": "unsure",
+              "text": "I'm not sure"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "providesI9Verification",
+          "title": "When hiring a new employee, do you provide the I-9 Employment Verification form during the onboarding process?",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "yes",
+              "text": "Yes"
+            },
+            {
+              "value": "no",
+              "text": "No"
+            },
+            {
+              "value": "unsure",
+              "text": "I'm not sure"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "hasOnboardingPolicies",
+          "title": "Are there any policies that your employees receive at the beginning of employment or during?",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "onboardingPolicies",
+          "visible": false,
+          "visibleIf": "{hasOnboardingPolicies} = true",
+          "title": "Please list the policies that you provide.",
+          "hideNumber": true,
+          "isRequired": true
+        },
+        {
+          "type": "radiogroup",
+          "name": "maintainsSeparateFiles",
+          "title": "Do you maintain separate files for employee medical, personnel, and I-9s?",
+          "isRequired": true,
+          "choices": [
+            {
+              "value": "yes",
+              "text": "Yes"
+            },
+            {
+              "value": "no",
+              "text": "No"
+            },
+            {
+              "value": "unsure",
+              "text": "I'm not sure"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "offersBenefits",
+          "title": "Do you offer employee health benefits?",
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "benefitsProvider",
+          "visible": false,
+          "visibleIf": "{offersBenefits} = true",
+          "title": "Where do you get your benefits from?",
+          "hideNumber": true,
+          "requiredIf": "{offersBenefits} = true"
+        },
+        {
+          "type": "radiogroup",
+          "name": "benefitsInterest",
+          "title": "If Bambee were to offer a benefits solution, how interested would you be in using it?",
+          "isRequired": true,
+          "choices": [
+            "Very interested",
+            "Somewhat interested",
+            "Not interested"
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "hasDoneSexualHarassmentTraining",
+          "title": "Has your team completed sexual harassment training?",
+          "isRequired": true
+        },
+        {
+          "type": "text",
+          "name": "lastSexualHarassmentTrainingDate",
+          "visible": false,
+          "visibleIf": "{hasDoneSexualHarassmentTraining} = true",
+          "title": "What was the month and year of your team's last sexual harassment training?",
+          "hideNumber": true,
+          "isRequired": true,
+          "requiredIf": "{hasDoneSexualHarassmentTraining} = true",
+          "inputType": "month"
+        }
+      ]
+    }
+  ],
+  "showCompletedPage": false
+}
