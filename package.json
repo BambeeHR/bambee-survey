@@ -1,7 +1,6 @@
 {
   "name": "bambee-survey",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "build": "vue-cli-service build --target lib --name bambee-survey src/BambeeSurvey.vue",
     "lint": "vue-cli-service lint",
