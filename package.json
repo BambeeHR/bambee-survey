@@ -1,5 +1,5 @@
 {
-  "name": "bambee-survey",
+  "name": "@bambee/bambee-survey",
   "version": "0.1.0",
   "scripts": {
     "build": "vue-cli-service build --target lib --name bambee-survey src/BambeeSurvey.vue",
@@ -50,8 +50,8 @@
     "stylelint": "^13.5.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.0.0",
-    "vue-cli-plugin-tailwind": "~2.0.6",
     "vue": "^2.6.11",
+    "vue-cli-plugin-tailwind": "~2.0.6",
     "vue-jest": "^3.0.5",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.11"
