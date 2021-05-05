@@ -12,13 +12,13 @@
   },
   "main": "./dist/bambee-survey.common.js",
   "dependencies": {
-    "@bambee/pollen": "^0.32.0",
     "lodash.clonedeep": "^4.5.0",
     "survey-vue": "^1.8.29",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
+    "@bambee/pollen": "^0.32.0",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
     "@storybook/addon-links": "^6.2.8",
