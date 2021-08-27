@@ -4,6 +4,76 @@
       "name": "page1",
       "elements": [
         {
+          "name": "question8",
+          "type": "text",
+          "title": "What is your company's legal name?"
+        },
+        {
+          "name": "question65",
+          "type": "text",
+          "title": "What is the business' mailing address?"
+        },
+        {
+          "name": "question56",
+          "type": "comment",
+          "title": "Please list the policies you currently provide."
+        },
+        {
+          "name": "question4",
+          "type": "multipletext",
+          "items": [
+            {
+              "name": "text1",
+              "title": "Full name"
+            },
+            {
+              "name": "text2",
+              "title": "Preferred email "
+            }
+          ],
+          "title": "Who will be your company's primary point-of-contact",
+          "isRequired": true,
+          "description": "The point-of-contact will be the first person Bambee reaches out to regarding important items that effect your business"
+        },
+        {
+          "name": "question1",
+          "type": "checkbox",
+          "title": "There are many key areas that HR can cover to reinforce and protect your business. Which of the following areas can Bambee solve for you?",
+          "choices": [
+            {
+              "text": "Select All",
+              "value": "item1"
+            },
+            {
+              "text": "I want to mitigate risk",
+              "value": "item2"
+            },
+            {
+              "text": "I want to protect my business from unlawful claims",
+              "value": "item3"
+            },
+            {
+              "text": "I want to be able to hold my employees accountable",
+              "value": "item4"
+            },
+            {
+              "text": "I want reassurance that I'm making the right business decisions",
+              "value": "item5"
+            },
+            {
+              "text": "I want to create a better working environment",
+              "value": "item6"
+            },
+            {
+              "text": "I want my business to be compliant",
+              "value": "item7"
+            }
+          ],
+          "hasOther": true,
+          "noneText": "Other",
+          "otherText": "I want to be proactive and stay up to date with employment laws"
+        },
+        {
           "type": "boolean",
           "name": "hasRemoteWorkers",
           "title": "Do you have any remote workers?",

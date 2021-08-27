@@ -74,6 +74,12 @@ export default {
     defaultThemeColors['$text-color'] = theme.colors.black;
     SurveyVue.StylesManager.applyTheme();
 
+    this.model.css = {
+      checkbox: {
+        itemDecorator: 'sv-svg',
+      },
+    };
+
     // Other possible theme values to be declared:
     // $header-background-color: "#e7e7e7"
     // $header-color: "#6d7072"
@@ -123,6 +129,11 @@ export default {
     transition-all;
 }
 
+.base-survey.sv_main
+  .sv_body
+  .sv_p_root
+  .sv_q
+  input:not([type='button']):not([type='reset']):not([type='submit']):not([type='image']):not([type='checkbox']):not([type='radio']):hover,
 .base-survey.sv_main textarea:hover {
   @apply border-gray-3;
 }
@@ -143,13 +154,14 @@ export default {
 
 .base-survey.sv_main textarea:focus,
 .base-survey.sv_main .sv-boolean input:focus ~ .sv-boolean__switch,
+.base-survey.sv_main input[type='text']:focus,
 .base-survey.sv_main input[type='button']:focus,
 .base-survey.sv_main button:focus {
-  @apply outline-none shadow-outline;
+  @apply outline-none shadow-none border-primary;
 }
 
 .base-survey.sv_main .sv_container .sv_body .sv_p_root .sv_q textarea {
-  @apply appearance-none border-2 font-body-text font-sans p-4 rounded-md;
+  @apply appearance-none font-body-text font-sans p-4;
 }
 
 .base-survey.sv_main
@@ -205,5 +217,58 @@ export default {
   @apply absolute bg-primary block h-0 rounded-full w-1/2;
   content: '';
   padding-top: 50%;
+}
+
+.base-survey.sv_main .sv_body .sv_p_root .sv_q input[type='checkbox'] {
+  @apply hidden;
+}
+
+.base-survey.sv_main .sv_body .sv_q_checkbox .sv_q_checkbox_label {
+  @apply relative flex items-center;
+}
+
+.base-survey.sv_main .sv_body .sv_q_checkbox {
+  @apply mb-2;
+}
+
+.base-survey.sv_main .sv_body .sv_q_checkbox:last-child {
+  @apply mb-0 !important;
+}
+
+.base-survey.sv_main .sv_body .sv_q_checkbox .form-group {
+  @apply mt-4;
+}
+
+.base-survey.sv_main
+  .sv_body
+  .sv_q_checkbox
+  .sv_q_checkbox_label
+  > span:last-child {
+  @apply leading-6 pl-10;
+}
+
+.base-survey.sv_main
+  .sv_body
+  .sv_q_checkbox
+  .sv_q_checkbox_label
+  .checkbox-material {
+  @apply absolute left-0 w-6 h-6 flex items-center justify-center bg-white text-white border border-solid border-gray-4 rounded-md;
+}
+
+.base-survey.sv_main
+  .sv_body
+  .sv_q_checkbox
+  .sv_q_checkbox_label
+  .checkbox-material
+  .sv-svg {
+  @apply w-6 h-6 text-white fill-current;
+}
+
+.base-survey.sv_main
+  .sv_body
+  .sv_q_checkbox.checked
+  .sv_q_checkbox_label
+  .checkbox-material {
+  @apply bg-primary border-primary;
 }
 </style>
