@@ -49,12 +49,10 @@ export default {
       return this.model.data;
     },
   },
-  watch: {
-    surveyData() {
-      this.$emit('input', this.model);
-    },
-  },
   created() {
+    this.model.onValueChanged.add((sender, options) => {
+      this.$emit('input', sender, options);
+    });
     this.model.onComplete.add((sender) => {
       this.$emit('complete', sender);
     });
@@ -131,11 +129,11 @@ export default {
 
 .base-survey.sv_main .sv-boolean__switch {
   @apply duration-light
-    ease-out 
-    inline-flex 
-    items-center 
-    mx-2 
-    transition-colors 
+    ease-out
+    inline-flex
+    items-center
+    mx-2
+    transition-colors
     w-12;
 }
 
@@ -185,13 +183,13 @@ export default {
     border-gray-4
     border-solid
     box-border
-    h-6 
-    inline-flex 
-    items-center 
-    justify-center 
-    mr-4 
-    relative 
-    rounded-full 
+    h-6
+    inline-flex
+    items-center
+    justify-center
+    mr-4
+    relative
+    rounded-full
     w-6;
 }
 
