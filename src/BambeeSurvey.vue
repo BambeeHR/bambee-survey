@@ -13,20 +13,6 @@ const { theme } = resolveConfig(tailwindConfig);
 
 const SurveyComponent = SurveyVue.Survey;
 
-export const mergeDefaultValues = (baseJson, defaultValues) => {
-  const json = cloneDeep(baseJson);
-  const elements = json.pages
-    ? json.pages.map((page) => page.elements).flat()
-    : json.elements;
-  Object.entries(defaultValues).forEach(([key, value]) => {
-    const matchingField = elements.find((el) => el.name === key);
-    if (matchingField) {
-      matchingField.defaultValue = value;
-    }
-  });
-  return json;
-};
-
 export default {
   components: { SurveyComponent },
   props: {
@@ -40,14 +26,11 @@ export default {
     },
   },
   data() {
-    const json = mergeDefaultValues(this.survey, this.initialValues);
+    const json = cloneDeep(this.survey);
     const model = new SurveyVue.Model(json);
+    model.data = cloneDeep(this.initialValues);
+
     return { model };
-  },
-  computed: {
-    surveyData() {
-      return this.model.data;
-    },
   },
   created() {
     this.model.onValueChanged.add((sender, options) => {

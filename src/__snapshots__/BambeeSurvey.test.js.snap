@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BambeeSurvey component advances to most recent page when passing initial values 1`] = `
+<div class="base-survey sv_main sv_default_css">
+  <form onsubmit="return false;">
+    <div class="sv_custom_header"></div>
+    <div class="sv_container">
+      <!---->
+      <!---->
+      <div class="sv_body">
+        <!---->
+        <!---->
+        <!---->
+        <div class="sv_p_root">
+          <!---->
+          <!---->
+          <div class="sv_row">
+            <div class="sv-vue-row-additional-div">
+              <div class="sv_q sv_qstn" id="sq_146" aria-labelledby="sq_146_ariaTitle" name="hasPayrollSolution" style="flex-basis: 100.000000%; flex-grow: 1; flex-shrink: 1; width: 100.000000%; min-width: 300px; max-width: initial; display: inline-block;">
+                <div class="">
+                  <h5 aria-label="Do you currently use a payroll solution? " id="sq_146_ariaTitle" class="sv_q_title">
+                    <div>
+                      <div>
+                        <!----> <span aria-hidden="true" class="sv_q_num" style="position: static;">4.</span>
+                        <!----> <span style="position: static;"><span style="position: static;">Do you currently use a payroll solution? </span></span> <span aria-hidden="true" class="sv_q_required_text">*</span>
+                      </div> <span tabindex="0" aria-expanded="true" class="sv_question_icon sv_expanded" style="display: none;"></span>
+                    </div>
+                  </h5>
+                  <div class="sv_q_description"><span style="position: static;"><span style="position: static;"></span></span></div>
+                </div>
+                <div class="">
+                  <div role="alert" id="sq_146_errors" class="sv_q_erbox sv_qstn_error_top" style="display: none;"></div>
+                  <div class="sv_qcbc sv_qbln"><label class="sv-boolean"><input type="checkbox" name="hasPayrollSolution" id="sq_146i" aria-required="true" aria-label="Do you currently use a payroll solution? " class="sv-visuallyhidden" value="false"> <span class="sv-boolean__label  "><span style="position: static;"><span style="position: static;">No</span></span></span>
+                      <div class="sv-boolean__switch"><span class="sv-boolean__slider"></span></div> <span class="sv-boolean__label  sv-boolean__label--disabled"><span style="position: static;"><span style="position: static;">Yes</span></span></span>
+                    </label></div>
+                  <!---->
+                  <!---->
+                  <!---->
+                </div>
+                <!---->
+              </div>
+            </div>
+          </div>
+          <!---->
+          <!---->
+        </div>
+        <!---->
+        <div class="sv_progress">
+          <div role="progressbar" aria-valuemin="0" aria-valuemax="100" class="sv_progress_bar" style="width: 37%;"><span class="undefined sv-hidden">Page 4 of 11</span></div> <span class="undefined undefined">Page 4 of 11</span>
+        </div>
+        <div class="sv_nav"><input type="button" value="Previous" class=" sv_prev_btn"> <input type="button" value="Next" class=" sv_next_btn">
+          <!----> <input type="button" value="Complete" class=" sv_complete_btn">
+        </div>
+      </div>
+      <!---->
+      <!---->
+      <!---->
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`BambeeSurvey component renders correctly 1`] = `
+<div class="base-survey sv_main sv_default_css">
+  <form onsubmit="return false;">
+    <div class="sv_custom_header"></div>
+    <div class="sv_container">
+      <!---->
+      <!---->
+      <div class="sv_body">
+        <!---->
+        <!---->
+        <!---->
+        <div class="sv_p_root">
+          <!---->
+          <!---->
+          <div class="sv_row">
+            <div class="sv-vue-row-additional-div">
+              <div style="flex-basis: 100.000000%; flex-grow: 1; flex-shrink: 1; width: 100.000000%; min-width: 300px; max-width: initial;">
+                <div class="sv_q sv_qstn" id="sq_100" aria-labelledby="sq_100_ariaTitle" name="hasRemoteWorkers">
+                  <div class="">
+                    <h5 aria-label="Do you have any remote workers?" id="sq_100_ariaTitle" class="sv_q_title">
+                      <div class="sv-title-actions"><span class="sv-title-actions__title"><!----> <div><!----> <span aria-hidden="true" class="sv_q_num" style="position: static;">1.</span>
+                        <!----> <span style="position: static;"><span class="sv-string-viewer" style="position: static;">Do you have any remote workers?</span></span> <span aria-hidden="true" class="sv_q_required_text">*</span>
+                      </div></span>
+                      <!---->
+                  </div>
+                  </h5>
+                  <div class="sv_q_description"><span style="position: static;"><span class="sv-string-viewer" style="position: static;"></span></span></div>
+                </div>
+                <div class="">
+                  <div role="alert" aria-live="polite" id="sq_100_errors" class="sv_q_erbox sv_qstn_error_top" style="display: none;"></div>
+                  <div class="sv_qcbc sv_qbln"><label class="sv-boolean sv-boolean--indeterminate"><input type="checkbox" name="hasRemoteWorkers" id="sq_100i" aria-required="true" aria-label="Do you have any remote workers?" class="sv-visuallyhidden" value=""> <span class="sv-boolean__label "><span style="position: static;"><span class="sv-string-viewer" style="position: static;">No</span></span></span>
+                      <div class="sv-boolean__switch"><span class="sv-boolean__slider"></span></div> <span class="sv-boolean__label "><span style="position: static;"><span class="sv-string-viewer" style="position: static;">Yes</span></span></span>
+                    </label></div>
+                  <!---->
+                  <!---->
+                  <!---->
+                </div>
+                <!---->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+      <!---->
+      <div class="sv_progress">
+        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" class="sv_progress_bar" style="width: 10%;"><span class="sv-hidden">Page 1 of 11</span></div> <span class="">Page 1 of 11</span>
+      </div>
+      <div class="sv_nav"><input type="button" value="Previous" class="sv_prev_btn"> <input type="button" value="Next" class="sv_next_btn">
+        <!----> <input type="button" value="Complete" class="sv_complete_btn">
+      </div>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+</div>
+</form>
+</div>
+`;
