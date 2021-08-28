@@ -10,6 +10,12 @@ module.exports = {
   rules: {
     'no-underscore-dangle': 'off',
     'vue/no-v-html': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: ['*.config.js', '**/*.test.js'],
+      },
+    ],
   },
   overrides: [
     {
