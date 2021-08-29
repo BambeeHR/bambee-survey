@@ -13,7 +13,7 @@
   "main": "./dist/bambee-survey.common.js",
   "dependencies": {
     "lodash.clonedeep": "^4.5.0",
-    "survey-vue": "^1.8.29",
+    "survey-vue": "^1.8.63",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
