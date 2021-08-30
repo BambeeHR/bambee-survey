@@ -24,6 +24,10 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    mode: {
+      type: String,
+      default: 'default',
+    },
   },
   data() {
     const json = cloneDeep(this.survey);
@@ -39,6 +43,10 @@ export default {
     this.model.onComplete.add((sender) => {
       this.$emit('complete', sender);
     });
+
+    if (this.mode === 'display') {
+      this.survey.mode = 'display';
+    }
 
     const defaultThemeColors = SurveyVue.StylesManager.ThemeColors.default;
     defaultThemeColors['$border-color'] = theme.colors.gray['5'];
