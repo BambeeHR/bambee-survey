@@ -38,5 +38,16 @@ describe('BambeeSurvey', () => {
         wrapper.find('input[name="hasPayrollSolution"]').element
       ).toBeVisible();
     });
+
+    test('inputs disabled when prop data mode = display', async () => {
+      const wrapper = mount(BambeeSurvey, {
+        propsData: {
+          survey,
+          mode: 'display',
+        },
+      });
+      const input = wrapper.find('input[name="hasRemoteWorkers"]');
+      expect(input.attributes('disabled')).toBe('disabled');
+    });
   });
 });
