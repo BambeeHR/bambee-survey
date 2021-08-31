@@ -26,7 +26,7 @@ export default {
     },
     mode: {
       type: String,
-      default: 'default',
+      default: 'display',
     },
   },
   data() {
@@ -45,7 +45,7 @@ export default {
     });
 
     if (this.mode === 'display') {
-      this.survey.mode = 'display';
+      this.model.mode = 'display';
     }
 
     const defaultThemeColors = SurveyVue.StylesManager.ThemeColors.default;

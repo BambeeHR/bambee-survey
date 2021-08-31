@@ -78,7 +78,7 @@ exports[`BambeeSurvey component renders correctly 1`] = `
           <div class="sv_row">
             <div class="sv-vue-row-additional-div">
               <div style="flex-basis: 100.000000%; flex-grow: 1; flex-shrink: 1; width: 100.000000%; min-width: 300px; max-width: initial;">
-                <div class="sv_q sv_qstn" id="sq_100" aria-labelledby="sq_100_ariaTitle" name="hasRemoteWorkers">
+                <div class="sv_q sv_qstn sv_q--disabled" id="sq_100" aria-labelledby="sq_100_ariaTitle" name="hasRemoteWorkers">
                   <div class="">
                     <h5 aria-label="Do you have any remote workers?" id="sq_100_ariaTitle" class="sv_q_title">
                       <div class="sv-title-actions"><span class="sv-title-actions__title"><!----> <div><!----> <span aria-hidden="true" class="sv_q_num" style="position: static;">1.</span>
@@ -91,8 +91,8 @@ exports[`BambeeSurvey component renders correctly 1`] = `
                 </div>
                 <div class="">
                   <div role="alert" aria-live="polite" id="sq_100_errors" class="sv_q_erbox sv_qstn_error_top" style="display: none;"></div>
-                  <div class="sv_qcbc sv_qbln"><label class="sv-boolean sv-boolean--indeterminate"><input type="checkbox" name="hasRemoteWorkers" id="sq_100i" aria-required="true" aria-label="Do you have any remote workers?" class="sv-visuallyhidden" value=""> <span class="sv-boolean__label "><span style="position: static;"><span class="sv-string-viewer" style="position: static;">No</span></span></span>
-                      <div class="sv-boolean__switch"><span class="sv-boolean__slider"></span></div> <span class="sv-boolean__label "><span style="position: static;"><span class="sv-string-viewer" style="position: static;">Yes</span></span></span>
+                  <div class="sv_qcbc sv_qbln"><label class="sv-boolean sv-boolean--disabled sv-boolean--indeterminate"><input type="checkbox" name="hasRemoteWorkers" id="sq_100i" disabled="disabled" aria-required="true" aria-label="Do you have any remote workers?" class="sv-visuallyhidden" value=""> <span class="sv-boolean__label  sv-boolean__label--disabled"><span style="position: static;"><span class="sv-string-viewer" style="position: static;">No</span></span></span>
+                      <div class="sv-boolean__switch"><span class="sv-boolean__slider"></span></div> <span class="sv-boolean__label  sv-boolean__label--disabled"><span style="position: static;"><span class="sv-string-viewer" style="position: static;">Yes</span></span></span>
                     </label></div>
                   <!---->
                   <!---->
@@ -110,7 +110,8 @@ exports[`BambeeSurvey component renders correctly 1`] = `
         <div role="progressbar" aria-valuemin="0" aria-valuemax="100" class="sv_progress_bar" style="width: 10%;"><span class="sv-hidden">Page 1 of 11</span></div> <span class="">Page 1 of 11</span>
       </div>
       <div class="sv_nav"><input type="button" value="Previous" class="sv_prev_btn"> <input type="button" value="Next" class="sv_next_btn">
-        <!----> <input type="button" value="Complete" class="sv_complete_btn">
+        <!---->
+        <!---->
       </div>
     </div>
     <!---->
