@@ -26,7 +26,7 @@ export default {
     },
     mode: {
       type: String,
-      default: 'display',
+      default: 'edit',
     },
   },
   data() {
