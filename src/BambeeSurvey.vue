@@ -32,7 +32,7 @@ export default {
   data() {
     const json = cloneDeep(this.survey);
     const model = new SurveyVue.Model(json);
-    model.data = cloneDeep(this.initialValues);
+    model.mergeData(this.initialValues);
 
     return { model };
   },
