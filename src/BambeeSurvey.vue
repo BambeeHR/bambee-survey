@@ -26,13 +26,13 @@ export default {
     },
     mode: {
       type: String,
-      default: 'display',
+      default: 'edit',
     },
   },
   data() {
     const json = cloneDeep(this.survey);
     const model = new SurveyVue.Model(json);
-    model.data = cloneDeep(this.initialValues);
+    model.mergeData(this.initialValues);
 
     return { model };
   },
@@ -75,26 +75,6 @@ export default {
     // $header-background-color: "#e7e7e7"
     // $header-color: "#6d7072"
     // $progress-text-color: "#9d9d9d"
-
-    // Advance to the most recently completed page on the survey.
-    const initialValueKeys = Object.keys(this.initialValues);
-    if (
-      initialValueKeys.length &&
-      this.survey.pages.length > 1 &&
-      !this.model.isCurrentPageHasErrors
-    ) {
-      let lastCompletedPageName;
-      this.survey.pages.forEach((page) => {
-        if (
-          page.elements.some((element) =>
-            initialValueKeys.includes(element.name)
-          )
-        ) {
-          lastCompletedPageName = page.name;
-        }
-      });
-      this.model.currentPage = lastCompletedPageName;
-    }
   },
 };
 </script>
