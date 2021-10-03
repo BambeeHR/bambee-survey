@@ -45,8 +45,9 @@ export default {
       this.$emit('complete', sender);
     });
 
-    this.model.onCompleting.add((sender) => {
-      this.$emit('completing', sender);
+    this.model.onCompleting.add((sender, options) => {
+      console.log(`>>> options inside <<<\n`, options);
+      this.$emit('completing', sender, options);
     });
 
     if (this.mode === 'display') {
