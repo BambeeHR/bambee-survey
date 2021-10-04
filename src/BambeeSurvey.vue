@@ -46,7 +46,6 @@ export default {
     });
 
     this.model.onCompleting.add((sender, options) => {
-      console.log(`>>> options inside <<<\n`, options);
       this.$emit('completing', sender, options);
     });
 
