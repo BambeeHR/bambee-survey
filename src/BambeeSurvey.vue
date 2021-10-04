@@ -40,8 +40,13 @@ export default {
     this.model.onValueChanged.add((sender, options) => {
       this.$emit('input', sender, options);
     });
+
     this.model.onComplete.add((sender) => {
       this.$emit('complete', sender);
+    });
+
+    this.model.onCompleting.add((sender, options) => {
+      this.$emit('completing', sender, options);
     });
 
     if (this.mode === 'display') {
