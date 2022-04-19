@@ -28,6 +28,10 @@ export default {
       type: String,
       default: 'edit',
     },
+    employeeName: {
+      type: String | null,
+      default: null,
+    }
   },
   data() {
     const json = cloneDeep(this.survey);
@@ -35,6 +39,11 @@ export default {
     model.mergeData(this.initialValues);
 
     return { model };
+  },
+  mounted() {
+    if (this.employeeName) {
+      this.model.setValue('employee_name', this.employeeName)
+    }
   },
   created() {
     this.model.onValueChanged.add((sender, options) => {
